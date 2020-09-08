@@ -1,10 +1,8 @@
 #!/usr/bin/env sh
 
-cd /opt/app
-#export COREHOST_TRACE=1
-export DOTNET_ROOT=/opt/dotnet
-export PATH="$PATH:$DOTNET_ROOT"
+set -euo pipefail
+export DOTNET_ROOT=/opt/app/publish
 export COMPlus_EnableDiagnostics=0
 export LD_PRELOAD=/opt/app/realpath.so
-#dotnet --info
-strace dotnet run --project myWebApp
+cd /opt/app/publish
+strace ./myWebApp
