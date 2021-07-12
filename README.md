@@ -1,4 +1,4 @@
-WIP effort getting .NET to run in sandstorm, using docker-spk.
+Hello, World! .NET sandstorm app, using docker-spk.
 
 # Building
 
@@ -11,7 +11,3 @@ docker-spk build
 spk unpack 'Example App-0.0.0.spk' oldspk
 spk dev # Or spk pack
 ```
-
-Note that this doesn't quite work yet; see:
-
-<https://github.com/dotnet/runtime/issues/2534>
