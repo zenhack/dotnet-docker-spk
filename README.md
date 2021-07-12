@@ -8,7 +8,7 @@ working spk is slightly fiddly:
 
 ```
 docker-spk build
-docker-spk unpack 'Example App-0.0.0.spk' oldspk
+spk unpack 'Example App-0.0.0.spk' oldspk
 spk dev # Or spk pack
 ```
 
